@@ -72,4 +72,9 @@ footer {
   text-align: center;
   padding: 30px;
   margin-top: 40px;
+}  header img{
+  width:180px;
+  max-width:90%;
+  margin-bottom:15px;
+  border-radius:12px;
 }
