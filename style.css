@@ -122,3 +122,25 @@ footer {
 .whatsapp-float:hover {
   background-color: #1ebe5d;
 }
+.logo{
+    width:180px;
+    max-width:90%;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+header h2{
+    margin-top:15px;
+    font-size:28px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+header{
+    padding:70px 20px;
+    background:linear-gradient(135deg,#0b5ed7,#198754);
+    color:white;
+}
