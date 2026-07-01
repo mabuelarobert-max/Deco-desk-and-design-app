@@ -1,225 +1,119 @@
-/* ======================================
+/* ==============================
    Deco Desk And Design
    Professional Website
-====================================== */
+============================== */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fb;
-    color:#222;
-    line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0b5ed7,#198754);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-.overlay{
-    max-width:1100px;
-    margin:auto;
+background:linear-gradient(135deg,#0b5ed7,#198754);
+color:#fff;
+text-align:center;
+padding:80px 20px;
 }
 
 .logo{
-    width:180px;
-    max-width:90%;
-    border-radius:15px;
-    margin-bottom:20px;
+width:180px;
+max-width:90%;
+margin-bottom:20px;
+border-radius:15px;
 }
 
 .hero h1{
-    font-size:48px;
-    margin-bottom:10px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:28px;
-    margin-top:20px;
+font-size:26px;
+margin-bottom:20px;
 }
 
-.slogan{
-    font-size:20px;
-    margin-top:15px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#198754;
-    color:white;
-    padding:14px 30px;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#157347;
+.hero p{
+font-size:18px;
+margin-bottom:30px;
 }
 
 nav{
-    background:#111;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-nav li{
-    margin:0;
+background:#111;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 nav a{
-    display:block;
-    padding:18px 22px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+color:#fff;
+text-decoration:none;
+padding:18px 25px;
+font-weight:bold;
+transition:.3s;
 }
 
 nav a:hover{
-    background:#198754;
+background:#198754;
 }
 
-section{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:60px 20px;
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
 }
 
-section h2{
-    text-align:center;
-    margin-bottom:25px;
-    color:#0b5ed7;
+.container h2{
+text-align:center;
+margin-bottom:30px;
+color:#0b5ed7;
+font-size:32px;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
+
 .card{
-    background:#ffffff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    transition:0.3s;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transform:translateY(-8px);
 }
 
 .card h3{
-    color:#198754;
-    margin-bottom:15px;
-}
-
-.card p{
-    margin-bottom:10px;
-}
-
-.about,
-.why,
-.portfolio,
-.contact{
-    text-align:center;
-}
-
-.contact .card{
-    max-width:700px;
-    margin:auto;
-}
-
-footer{
-    background:#0b5ed7;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-    margin-top:50px;
-}
-
-footer h2{
-    color:white;
-    margin-bottom:10px;
-}
-
-footer p{
-    margin:8px 0;
-}
-
-.whatsapp-float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:28px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:.3s;
-}
-
-.whatsapp-float:hover{
-    transform:scale(1.1);
-    background:#1ebe5d;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-@media (max-width:768px){
-
-.hero h1{
-    font-size:34px;
-}
-
-.hero h2{
-    font-size:22px;
-}
-
-.slogan{
-    font-size:18px;
-}
-
-nav ul{
-    flex-direction:column;
-}
-
-nav a{
-    text-align:center;
-}
-
-section{
-    padding:40px 15px;
+margin-bottom:15px;
+color:#198754;
 }
 
 .btn{
-    width:100%;
-    max-width:300px;
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#198754;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
 }
 
+.btn:hover{
+background:#157347;
 }
+    
