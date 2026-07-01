@@ -1,0 +1,18 @@
+{
+  "name": "deco-desk-and-design",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deco Desk And Design Business Management System",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "firebase": "^11.0.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
