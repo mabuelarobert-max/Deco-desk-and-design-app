@@ -1,0 +1,254 @@
+/* ==============================
+   Deco Desk And Design
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#0b5ed7,#198754);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.logo{
+    width:180px;
+    max-width:90%;
+    margin:0 auto 20px;
+    display:block;
+    border-radius:15px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:1.6rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    padding:18px 25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#198754;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#198754;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#157347;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+/* SECTIONS */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.container h2{
+    text-align:center;
+    color:#0b5ed7;
+    margin-bottom:35px;
+    font-size:2rem;
+}
+
+/* CARDS */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#198754;
+    margin-bottom:15px;
+}
+
+/* IMAGES */
+
+img{
+    max-width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:#d1d5db;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+section{
+    animation:fadeUp .8s ease;
+}
+
+/* TEXT SELECTION */
+
+::selection{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        padding:60px 15px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
+        border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .container{
+        padding:40px 15px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        font-size:28px;
+    }
+}
