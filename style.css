@@ -116,4 +116,129 @@ transition:.3s;
 .btn:hover{
 background:#157347;
 }
-    
+ /* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .services,
+    .about,
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   FLOATING WHATSAPP BUTTON
+========================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    transition: .3s;
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeUp .8s ease;
+}
+
+/* =========================
+   IMAGE STYLING
+========================= */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.service img {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PREMIUM TOUCHES
+========================= */
+::selection {
+    background: #2563eb;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button,
+.btn {
+    transition: .3s;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37,99,235,.35);
+}
+   
