@@ -111,3 +111,115 @@ section h2{
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:20px;
 }
+.card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card h3{
+    color:#198754;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+.about,
+.why,
+.portfolio,
+.contact{
+    text-align:center;
+}
+
+.contact .card{
+    max-width:700px;
+    margin:auto;
+}
+
+footer{
+    background:#0b5ed7;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+}
+
+footer h2{
+    color:white;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media (max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.slogan{
+    font-size:18px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+nav a{
+    text-align:center;
+}
+
+section{
+    padding:40px 15px;
+}
+
+.btn{
+    width:100%;
+    max-width:300px;
+}
+
+}
