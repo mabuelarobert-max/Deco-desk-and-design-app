@@ -3,107 +3,444 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DECO STORE | Deco Desk And Design</title>
+
+<title>Deco Store | Deco Desk And Design</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7f4;color:#222}
-header{background:#278b35;color:white;text-align:center;padding:25px 12px}
-header h1{margin:0;font-size:32px}
-header p{margin:10px 0 0}
-nav{background:#155d27;padding:14px;text-align:center}
-nav a{color:white;text-decoration:none;margin:10px;font-weight:bold}
-.hero{padding:40px 18px;text-align:center;background:#e4f5df}
-.hero h2{color:#17662b;font-size:28px}
-.button{display:inline-block;background:#168337;color:white;padding:13px 20px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;cursor:pointer}
-.container{max-width:1000px;margin:auto;padding:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px #ddd;text-align:center}
-.card h3{color:#207b32}
-input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:5px}
-footer{background:#155d27;color:white;text-align:center;padding:22px;margin-top:25px}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8f2;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #e9f8d8, #dff3fb);
+    text-align: center;
+    padding: 20px 12px;
+    border-bottom: 5px solid #8bcf28;
+}
+
+.logo {
+    width: 160px;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+header h1 {
+    color: #245326;
+    margin: 10px 0 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+nav {
+    background: #245326;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 6px 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px 15px;
+    background: white;
+}
+
+.hero h2 {
+    color: #245326;
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 14px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #245326;
+}
+
+.button {
+    display: inline-block;
+    background: #218c48;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.order-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.order-box h2 {
+    color: #245326;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+footer {
+    background: #245326;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #d9ffb8;
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 23px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>DECO STORE</h1>
-<p>By DECO DESK AND DESIGN (PTY) LTD</p>
-<p>Building Views and Vision for a Better Environment and Space</p>
+    <img
+        class="logo"
+        src="assets/logo.png"
+        alt="Deco Desk And Design Logo"
+        onerror="this.style.display='none'">
+
+    <h1>DECO STORE</h1>
+
+    <p><strong>By Deco Desk And Design</strong></p>
+
+    <p>Quality Products for Your Home and Business</p>
 </header>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#products">Categories</a>
-<a href="#order">Order</a>
+    <a href="index.html">Main Website</a>
+    <a href="#products">Products</a>
+    <a href="#order">Place an Order</a>
+    <a href="#contact">Contact Us</a>
 </nav>
 
-<section class="hero" id="home">
-<h2>Welcome to DECO STORE</h2>
-<p>Quality products for your home, business and projects.</p>
-<a class="button" href="#products">Explore Our Store</a>
+<section class="hero">
+    <h2>Welcome to Deco Store!</h2>
+
+    <p>
+        Discover our cleaning products and other products
+        for your home, business and projects.
+    </p>
+
+    <a href="#products" class="button">
+        Explore Products
+    </a>
 </section>
 
 <main class="container">
-<h2 id="products">Shop Our Categories</h2>
-<div class="grid">
-<div class="card">
-<h3>🧴 Cleaning Products</h3>
-<p>Dishwashing liquid, pine gel, bleach and cleaning cream.</p>
-</div>
-<div class="card">
-<h3>🪑 Furniture</h3>
-<p>Furniture and home products.</p>
-</div>
-<div class="card">
-<h3>☀️ Solar Solutions</h3>
-<p>Solar panels, inverters and batteries.</p>
-</div>
-<div class="card">
-<h3>🏗️ Building Supplies</h3>
-<p>Construction materials and building solutions.</p>
-</div>
-<div class="card">
-<h3>🖨️ Printing & Branding</h3>
-<p>Printing, photocopying and branding services.</p>
-</div>
-</div>
 
-<section id="order">
-<h2>Place Your Order</h2>
-<p>Complete the form to send your order through WhatsApp.</p>
-<form onsubmit="sendOrder(event)">
-<input id="customer" placeholder="Your full name" required>
-<input id="phone" type="tel" placeholder="Your phone number" required>
-<select id="category">
-<option>Cleaning Products</option>
-<option>Furniture</option>
-<option>Solar Solutions</option>
-<option>Building Supplies</option>
-<option>Printing & Branding</option>
-</select>
-<input id="product" placeholder="Product name and quantity" required>
-<button class="button" type="submit">Order on WhatsApp</button>
-</form>
-</section>
+    <section id="products">
+        <h2>Our Products</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img
+                    class="product-image"
+                    src="assets/file_000000005f208211ae90e061f8b46107.png"
+                    alt="Cleaning products advertised by Deco Store">
+
+                <h3>Cleaning Products</h3>
+
+                <p>
+                    Explore our cleaning products for your
+                    home and business.
+                </p>
+
+                <p>
+                    Contact us for available products,
+                    sizes and prices.
+                </p>
+
+                <a
+                    class="button"
+                    href="#order"
+                    onclick="selectProduct('Cleaning Products')">
+                    Enquire Now
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Dishwashing Liquid</h3>
+
+                <p>
+                    Ask us about our available dishwashing
+                    liquid products and sizes.
+                </p>
+
+                <a
+                    class="button"
+                    href="#order"
+                    onclick="selectProduct('Dishwashing Liquid')">
+                    Enquire Now
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Pine Gel</h3>
+
+                <p>
+                    Contact us to check availability,
+                    sizes and prices.
+                </p>
+
+                <a
+                    class="button"
+                    href="#order"
+                    onclick="selectProduct('Pine Gel')">
+                    Enquire Now
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Cleaning Cream</h3>
+
+                <p>
+                    Ask about our cleaning cream
+                    and available sizes.
+                </p>
+
+                <a
+                    class="button"
+                    href="#order"
+                    onclick="selectProduct('Cleaning Cream')">
+                    Enquire Now
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Black Dip</h3>
+
+                <p>
+                    Contact us for product details,
+                    availability and pricing.
+                </p>
+
+                <a
+                    class="button"
+                    href="#order"
+                    onclick="selectProduct('Black Dip')">
+                    Enquire Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="order" class="order-box">
+        <h2>Place an Order or Make an Enquiry</h2>
+
+        <p>
+            Complete the form below. Your order details
+            will be sent to us on WhatsApp.
+        </p>
+
+        <form onsubmit="sendOrder(event)">
+
+            <label for="customer">Your Name</label>
+            <input
+                id="customer"
+                type="text"
+                placeholder="Enter your name"
+                required>
+
+            <label for="phone">Your Phone Number</label>
+            <input
+                id="phone"
+                type="tel"
+                placeholder="Enter your phone number"
+                required>
+
+            <label for="product">Choose a Product</label>
+            <select id="product" required>
+                <option value="">Select a product</option>
+                <option>Cleaning Products</option>
+                <option>Dishwashing Liquid</option>
+                <option>Pine Gel</option>
+                <option>Cleaning Cream</option>
+                <option>Black Dip</option>
+                <option>Other Products</option>
+            </select>
+
+            <label for="quantity">Quantity or Size Required</label>
+            <input
+                id="quantity"
+                type="text"
+                placeholder="For example: 2 bottles of 750 ml"
+                required>
+
+            <label for="message">Additional Information</label>
+            <textarea
+                id="message"
+                rows="3"
+                placeholder="Ask about prices, delivery or availability"></textarea>
+
+            <br><br>
+
+            <button class="button" type="submit">
+                Send Order on WhatsApp
+            </button>
+
+        </form>
+    </section>
+
+    <section id="contact" class="order-box">
+        <h2>Contact Deco Store</h2>
+
+        <p>
+            <strong>Business:</strong>
+            Deco Desk And Design
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+27655342707">065 534 2707</a>
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/27655342706">
+                065 534 2706
+            </a>
+        </p>
+
+        <p>
+            <strong>Address:</strong>
+            290 Swan Street, Swaneville,
+            Krugersdorp, 1754
+        </p>
+    </section>
+
 </main>
 
 <footer>
-<p>DECO DESK AND DESIGN (PTY) LTD</p>
-<p>290 Swan Street, Swaneville, Krugersdorp, 1754</p>
-<p>Phone: 065 534 2707</p>
-<p>WhatsApp: 065 534 2706</p>
-<p>© 2026 DECO STORE</p>
+    <p><strong>DECO STORE</strong></p>
+
+    <p>
+        By Deco Desk And Design
+    </p>
+
+    <p>
+        Building Views and Vision for a Better Environment and Space.
+    </p>
+
+    <p>
+        &copy; 2026 Deco Desk And Design. All rights reserved.
+    </p>
 </footer>
 
 <script>
-function sendOrder(event){
-event.preventDefault();
-const customer=document.getElementById("customer").value;
-const phone=document.getElementById("phone").value;
-const category=document.getElementById("category").value;
-const product=document.getElementById("product").value;
-const message=`DECO STORE ORDER\nCustomer: ${customer}\nPhone: ${phone}\nCategory: ${category}\nProduct and quantity: ${product}`;
-window.open("https://wa.me/27655342706?text="+encodeURIComponent(message),"_blank");
+function selectProduct(product) {
+    document.getElementById("product").value = product;
+}
+
+function sendOrder(event) {
+    event.preventDefault();
+
+    const customer =
+        document.getElementById("customer").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const product =
+        document.getElementById("product").value;
+
+    const quantity =
+        document.getElementById("quantity").value.trim();
+
+    const extra =
+        document.getElementById("message").value.trim();
+
+    const message =
+        "DECO STORE ORDER / ENQUIRY\n\n" +
+        "Customer: " + customer + "\n" +
+        "Phone: " + phone + "\n" +
+        "Product: " + product + "\n" +
+        "Quantity or size: " + quantity + "\n" +
+        "Additional information: " + (extra || "None");
+
+    const whatsappURL =
+        "https://wa.me/27655342706?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
 }
 </script>
+
 </body>
-  </html>
+</html>
